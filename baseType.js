@@ -56,4 +56,7 @@ app.use('/graphql', graphqlHttp({
     graphiql: true,
 }))
 
+// 公开文件夹，供用户访问静态资源
+app.use(express.static('public'))
+
 app.listen(3000);
